@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Flores para Apolinar</title>
+
+    <link rel="stylesheet" href="DATOS/css/style.css">
+    <link rel="icon" href="DATOS/img/flowers.png" type="image/png">
+
+    <style>
+        *,
+        *::before,
+        *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --dark-color: #000;
+            --fl-speed: 0.8s;
+            --speed-leaf: 2s;
+        }
+
+        .night {
+            position: fixed;
+            top: 0;
+            left: 50%;
+            width: 100%;
+            height: 100%;
+            transform: translateX(-50%);
+            filter: blur(0.1vmin);
+            z-index: -1;
+
+            background-image:
+                radial-gradient(ellipse at top,
+                    transparent 0%,
+                    var(--dark-color)),
+                radial-gradient(ellipse at bottom,
+                    var(--dark-color),
+                    rgba(145, 233, 255, 0.2)),
+                repeating-linear-gradient(220deg,
+                    rgb(0, 0, 0) 0,
+                    rgb(0, 0, 0) 19px,
+                    transparent 19px,
+                    transparent 22px),
+                repeating-linear-gradient(189deg,
+                    rgb(0, 0, 0) 0,
+                    rgb(0, 0, 0) 19px,
+                    transparent 19px,
+                    transparent 22px),
+                repeating-linear-gradient(148deg,
+                    rgb(0, 0, 0) 0,
+                    rgb(0, 0, 0) 19px,
+                    transparent 19px,
+                    transparent 22px),
+                linear-gradient(90deg,
+                    rgb(0, 255, 250),
+                    rgb(240, 240, 240));
+        }
+
+        .button-link {
+            display: inline-block;
+            padding: 12px 24px;
+            color: #000;
+            font-weight: bold;
+            text-decoration: none;
+            background-color: #fff;
+            border: 2px solid #000;
+            border-radius: 8px;
+            cursor: pointer;
+            transition:
+                transform 0.3s ease,
+                background-color 0.3s ease;
+        }
+
+        .button-link:hover {
+            background-color: #00fffa;
+            transform: scale(1.05);
+        }
+
+        .button-link:focus-visible {
+            outline: 3px solid #00fffa;
+            outline-offset: 4px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="night"></div>
+    <div class="greetings"> <span>H</span> <span>O</span> <span>L</span> <span>A</span> </div>
+    <div class="greetings"> <span>A</span> <span>P</span> <span>O</span> <span>L</span> <span>I</span> <span>N</span>
+        <span>A</span> <span>R</span> </div>
+    <div class="description"> <span>SON PARA TI &lt;3</span> </div>
+
+    <div class="button"> <button type="button"> <a href="DATOS/flores.html">CLICK AQUÍ</a> </button> </div>
+    </main>
+
+</body>
+
+</html>
